@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Cleaning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="section-header">
+        <div class="container">
+            <nav class="section-header__nav d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+                    <div class="section-header__logo">
+                        <img src="./img/logo-header.png" alt="logo">
+                    </div>
+                    <p class="mb-0 section-header__tagline">Профессиональные клининговые услуги</p>
+                </div>
+                <div class="section-header__col">
+                    <div class="dropdown">
+                        <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Vodafone (099) 445-84-66
+                        </span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p class="dropdown-item">Vodafone (099) 445-84-66</p>
+                            <p class="dropdown-item">Vodafone (099) 445-84-66</p>
+                            <p class="dropdown-item">Vodafone (099) 445-84-66</p>
+                        </div>
+                    </div>
+                    <p class="mb-0 section-header-phone">
+                        <a href="tel:+380994458466">Заказать звонок</a>
+                    </p>
+                </div>
+            </nav>
+            <div class="section-header__item d-none">
+                <h1>Karcher Cleaning</h1>
+                <p class="mb-0">мировой лидер качества и чистоты</p>
+                <p class="mb-0">Широкий спектр услуг по уборке квартир, домов и офисов в Киеве и Киевской области. <span class="span__tagline">Доверьте уборку профессионалам своего дела!</span></p>
+                <div class="d-flex flex-row justify-content-between">
+                    <button class="button">Заказать уборку</button>
+                    <p class="mb-0">Посмотреть стоимость услуг</p>
+                </div>
+            </div>
+            <div class="section-header__form d-none">
+                <div class="section-header__form-title text-center">
+                    <h5>Заполните форму</h5>
+                    <p class="mb-0">Чтобы мы могли рассчитать ориентировочную стоимость уборки Вашего помещения!</p>
+                </div>
+                <div class="section-header__form-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 section-header__form-col__first">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Выберите вид уборки
+                                        </span>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                            <p class="dropdown-item">Vodafone (099) 445-84-66</p>
+                                            <p class="dropdown-item">Vodafone (099) 445-84-66</p>
+                                            <p class="dropdown-item">Vodafone (099) 445-84-66</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="row form__block border border-danger">
+                                        <div class="col-2">
+                                            <img src="./img/icon-user.png" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" name="" id="" placeholder="Ваше имя" class="w-100 h-100 border-0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="row form-block_amount border border-danger">
+                                        <div class="col-2">
+                                            <img src="./img/icon-date.png" alt="">
+                                        </div>
+                                        <div class="col-5">
+                                            Количество уборок в месяц
+                                        </div>
+                                        <div class="col-5 d-flex flex-row align-items-center">
+                                            <span>-</span>
+                                            <span>5</span>
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="row form__block border border-danger">
+                                        <div class="col-2">
+                                            <img src="./img/icon-phone.png" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" name="" id="" placeholder="+ 38 хх ххх хх хх" class="w-100 h-100 border-0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="dropdown">
+                                        <div class="row dropdown-toggle" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div class="col-2">
+                                                <img src="./img/icon-uslygi.png" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                Дополнительные услуги
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-1"><label for="services-1">Услуга «Доставка ключей»</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-2"><label for="services-2">Балкон (маленький)</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-3"><label for="services-3">Лоджия</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-4"><label for="services-4">Глажка</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-5"><label for="services-5">Мытье посуды</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-6"><label for="services-6">Мойка вытяжки внутри</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-7"><label for="services-7">Мойка холодильника внутри</label></p>
+                                            <p class="dropdown-item"><input type="checkbox" name="" id="services-8"><label for="services-8">Мойка СВЧ-печи</label></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="row form__block border border-danger">
+                                        <div class="col-2">
+                                            <img src="./img/icon-date.png" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            Выберите дату для уборки
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 section-header__form-col__second border border-primary">
+                            <div class="row border">
+                                <div class="col-3 px-0 border border-danger text-center">
+                                    <img src="./img/icon-gift.png" alt="">
+                                </div>
+                                <div class="col-9">
+                                    При оформлении абонемента на уборку Вы получите подарок
+                                </div>
+                            </div>
+                            <p class="mb-0"><span class="span__price">Цена уборки:</span> от 1 000 грн</p>
+                            <p class="mb-0 border">
+                                <input type="checkbox" name="" id="agree-rulles"><label for="agree-rulles">я согласен(на) с обработкой моих персональных данных и условиями договора на уборку.</label>
+                            </p>
+                            <button class="button">Заказать уборку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-services">
+            <div class="container">
+                <h2>
+                    <span>Наши услуги</span>
+                    <span>Профессиональная уборка жилых и офисных помещений.</span>
+                </h2>
+                <div class="section-services-wrap">
+                    <div class="section-services-card">
+                        <div class="section-services-card__img text-center">
+                            <img src="./img/card-1.png" alt="">
+                        </div>
+                        <h4 class="section-services-card__title">Повседневная уборка</h4>
+                        <div class="section-services-card__text">
+                            <p class="mb-0">Своевременная уборка позволяет поддерживать чистоту в помещении при минимальных затратах времени.</p>
+                            <p class="mb-0">А услуги опытных клинеров, использующих профессиональную технику и современные моющие средства, экономят ваши силы и энергию!</p>
+                        </div>
+                    </div>
+                    <div class="section-services-card">
+                        <div class="section-services-card__img text-center">
+                            <img src="./img/card-2.png" alt="">
+                        </div>
+                        <h4 class="section-services-card__title">Генеральная уборка</h4>
+                        <div class="section-services-card__text">
+                            <p class="mb-0">Генеральная уборка – хлопотное и трудоемкое дело. Она проводится редко, однако требует больших временных и энергозатрат, особенно в разрезе чистки труднодоступных мест..</p>
+                            <p class="mb-0">Не тратьте свои силы и время! Профессионалы Karcher Cleaning сделают всю работу сделают за вас, оставив после себя кристальную чистоту!</p>
+                        </div>
+                    </div>
+                    <div class="section-services-card">
+                        <div class="section-services-card__img text-center">
+                            <img src="./img/card-3.png" alt="">
+                        </div>
+                        <h4 class="section-services-card__title">Уборка после ремонта</h4>
+                        <div class="section-services-card__text">
+                            <p class="mb-0">Ежедневно наводить порядок в собственном доме — дело нелегкое, а уборка после ремонтно-строительных работ — вдвойне рутинное.</p>
+                            <p class="mb-0">Поручите это задание настоящим профессионалам своего дела, и оперативно получите в свое распоряжение готовое эксплуатации помещение, очищенное от грязи, пыли, строительного мусора!</p>
+                        </div>
+                    </div>
+                    <div class="section-services-card">
+                        <div class="section-services-card__img text-center">
+                            <img src="./img/card-4.png" alt="">
+                        </div>
+                        <h4 class="section-services-card__title">Эко уборка</h4>
+                        <div class="section-services-card__text">
+                            <p class="mb-0">Уборка без химии — лучшее решение, когда речь идет о людях, склонных к аллергическим реакциям.</p>
+                            <p class="mb-0">Специальная техника Karcher позволит привести в порядок и на 100% продезинфицировать любые поверхности.</p>
+                            <p class="mb-0">Избавьтесь от пыли и грязи легко и безопасно для здоровья — закажите эко уборку помещения!</p>
+                        </div>
+                    </div>
+                    <div class="section-services-card">
+                        <div class="section-services-card__img text-center">
+                            <img src="./img/card-5.png" alt="">
+                        </div>
+                        <h4 class="section-services-card__title">Химчистка</h4>
+                        <div class="section-services-card__text">
+                            <p class="mb-0">Приходится прилагать много усилий, чтобы сохранить обивку мебели в первозданном виде, но усилия не приносят результата?</p>
+                            <p class="mb-0">Профессиональная экспресс химчистка устранит любые загрязнения и запахи с поверхностей.</p>
+                            <p class="mb-0">Воспользуйтесь услугами профессионалов и ваша мебель будет как новая!</p>
+                        </div>
+                    </div>
+                    <div class="section-services-card">
+                        <div class="section-services-card__img text-center">
+                            <img src="./img/card-6.png" alt="">
+                        </div>
+                        <h4 class="section-services-card__title">Любой тип уборки</h4>
+                        <div class="section-services-card__text">
+                            <p class="mb-0">Наша компания выполняет любые типы уборки.</p>
+                            <p class="mb-0">Нажмите на кнопку, чтобы узнать предварительную стоимость и помочь нашему менеджеру провести качественную консультацию под ваш запрос</p>
+                            <button class="button w-100 px-0">Заказать уборку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-technology">
+            <div class="container">
+                <h2>
+                    <span>Техника и химия Kärcher</span>
+                    <span>Профессиональная немецкая техника и химия, которая отвечает всем стандартам качества ISO 9001</span>
+                </h2>
+                <div class="section-technology-wrap d-flex flex-row">
+                    <div class="section-technology-wrap__card">
+                        <div class="section-technology-wrap__card__img">
+                            <img src="./img/technology-bg-1.png" alt="">
+                        </div>
+                        <div class="section-technology-wrap__card__text">
+                            <h4 class="text-uppercase">ТЕХНИКА  KARCHER</h4>
+                            <p class="mb-0">Для уборки мы используем исключительно оборудование Kärcher, на 100% соответствующего мировым экологическим требованиям.</p>
+                            <p class="mb-0">Системы чистки Kärcher — универсальны. Они легко справляются даже с самыми сложными загрязнениями и не повреждают деликатные поверхности.</p>
+                            <p class="mb-0">Главные преимущества техники Kärcher — эффективность, надежность и надежная защита от микробов.</p>
+                        </div>
+                    </div>
+                    <div class="section-technology-wrap__card">
+                        <div class="section-technology-wrap__card__img">
+                            <img src="./img/technology-bg-2.png" alt="">
+                        </div>
+                        <div class="section-technology-wrap__card__text">
+                            <h4 class="text-uppercase">ХИМИЯ KARCHER</h4>
+                            <p class="mb-0">В арсенале наших сотрудников — только профессиональные, безопасные составы Karcher, обеспечивающие идеальную чистоту в помещении. </p>
+                            <p class="mb-0">Химия Karcher не только помогает добиться сияющей чистоты, но и защищает поверхности от активного изнашивания и обеспечивает свежий естественный запах.</p>
+                            <p class="mb-0">Чистящие составы Karcher безопасны для жизни и здоровья. Их можно смело использовать в помещениях, где есть животные, дети и пожилые люди.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="section-footer">
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+// Импорты
+@import '../fonts/font-face.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import './vars.scss';
+@import './mixin.scss';
+
+// Общие стили
+body {
+    font-family: $font-main-reg, Helvetica, sans-serif;
+    font-size: $size-main;
+    box-sizing: border-box !important;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: $color-link;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.w {
+    &-sm {
+        &-25 {
+            @media screen and (min-width: 576px) {
+                width: 25% !important;
+            }
+        }
+        &-50 {
+            @media screen and (min-width: 576px) {
+                width: 50% !important;
+            }
+        }
+        &-75 {
+            @media screen and (min-width: 576px) {
+                width: 75% !important;
+            }
+        }
+        &-100 {
+            @media screen and (min-width: 576px) {
+                width: 100% !important;
+            }
+        }
+    }
+    &-md {
+        &-25 {
+            @media screen and (min-width: 768px) {
+                width: 25% !important;
+            }
+        }
+        &-50 {
+            @media screen and (min-width: 768px) {
+                width: 50% !important;
+            }
+        }
+        &-75 {
+            @media screen and (min-width: 768px) {
+                width: 75% !important;
+            }
+        }
+        &-100 {
+            @media screen and (min-width: 768px) {
+                width: 100% !important;
+            }
+        }
+    }
+    &-lg {
+        &-25 {
+            @media screen and (min-width: 992px) {
+                width: 25% !important;
+            }
+        }
+        &-50 {
+            @media screen and (min-width: 992px) {
+                width: 50% !important;
+            }
+        }
+        &-75 {
+            @media screen and (min-width: 992px) {
+                width: 75% !important;
+            }
+        }
+        &-100 {
+            @media screen and (min-width: 992px) {
+                width: 100% !important;
+            }
+        }
+    }
+    &-xl {
+        &-25 {
+            @media screen and (min-width: 1200px) {
+                width: 25% !important;
+            }
+        }
+        &-50 {
+            @media screen and (min-width: 1200px) {
+                width: 50% !important;
+            }
+        }
+        &-75 {
+            @media screen and (min-width: 1200px) {
+                width: 75% !important;
+            }
+        }
+        &-100 {
+            @media screen and (min-width: 1200px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+// Индивидуальные стили
+.button {
+    color: #333;
+    font-size: 18px;
+    font-family: $font-main-medium;
+    background-color: #feeb17;
+    border: 0;
+    outline: 0;
+    padding: 25px 0;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-align: center;
+    transition: background .7s, color .7s;
+
+    &:hover {
+        color:#feeb17;
+        background: #333;
+    }
+
+    &:focus {
+        border: 0;
+        outline: 0;
+    }
+}
+.dropdown {
+    &-toggle {
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-item {
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.container {
+    
+    @media screen and (min-width: 1300px) {
+        min-width: 1285px !important;
+        padding: 0;
+    }
+}
+h2 {
+    color: #20231e;
+    line-height: 35px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        &:first-child {
+            font-family: $font-main-black;
+            font-size: 60px;
+            line-height: 35px;
+            margin-bottom: 14px;
+        }
+
+        &:last-child {
+            font-size: 16px;
+            margin-left: 3px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: -20%;
+        left: -10px;
+        width: 100%;
+        z-index: -1;
+        height: 120%;
+        content: '';
+        border-left: 18px solid #feeb17;
+    }
+}
+.section {
+    &-header {
+        background: url('../img/header-big-bg.png') center no-repeat;
+        min-height: 100vh;
+        padding: 63px 0 0;
+        border-top: 9px solid #d0d0d0;
+
+        @media screen and (min-width: 1920px) {
+            background: url('../img/header-big-bg.png') center no-repeat;
+            background-size: cover;
+        }
+
+        &__nav {
+
+        }
+
+        &__logo {
+            margin-right: 24px;
+
+            @media screen and (max-width: 991px) {
+                margin-right: 0;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__tagline {
+            width: 200px;
+            color: #20231e;
+
+            @media screen and (max-width: 991px) {
+                width: auto;
+            }
+        }
+
+        &__col {
+            text-align: right;
+
+            @media screen and (max-width: 767px) {
+                text-align: center;
+                margin-top: 24px;
+            }
+        }
+
+        &__item {
+
+        }
+
+        &-phone {
+            a {
+                border-bottom: 1px dashed black;
+            }
+        }
+    }
+
+    &-services {
+        background: #f2f3f5;
+        padding: 256px 0 154px;
+
+        h2 {
+            margin-bottom: 101px;
+        }
+
+        &-wrap {
+            display: grid;
+            grid-template-columns: 385px 385px 385px;
+            row-gap: 60px;
+            column-gap: 65px;
+            width: 100%;
+
+            @media screen and (max-width: 1400px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: 991px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-card {
+            padding: 61px 55px 61px 71px !important;
+            background-color: #fff;
+            // margin-bottom: 60px;
+
+            @media screen and (max-width: 576px) {
+                padding: 61px 30px !important;
+            }
+
+            // width: 382px;
+
+            // &:hover {
+            //     cursor: pointer;
+            //     background-color: #6e6e6e;
+
+            //     .section-services-card__title {
+            //         color: #fff;
+            //         font-size: 18px;
+            //     }
+
+            //     .section-services-card__text {
+            //         color: #fff;
+            //         font-size: 14px;
+            //     }
+            // }
+
+            &__img {
+                margin-bottom: 61px;
+            }
+
+            &__title {
+                color: #20231e;
+                font-family: $font-main-black;
+                font-size: 20px;
+                margin-bottom: 24px;
+            }
+
+            &__text {
+                line-height: 24px;
+
+                p {
+                    margin-bottom: 24px !important;
+
+                    &:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+
+            .button {
+                margin-top: 69px;
+            }
+        }
+    }
+
+    &-technology {
+        padding: 115px 0 154px;
+
+        h2 {
+            margin-bottom: 105px;
+        }
+
+        &-wrap {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+
+            &__card {
+                // border: 1px solid black;
+
+                &:last-child {
+                    margin-top: 27px;
+
+                    .section-technology-wrap__card__text {
+                        padding: 70px 55px 85px 83px;
+                    }
+                }
+
+                &:first-child {
+
+                    .section-technology-wrap__card__text {
+                        padding: 70px 65px 120px 73px;
+                        background-color: #feeb17;
+                    }
+                }
+
+                &__text {
+
+                    h4 {
+                        margin-bottom: 35px;
+                        font-family: $font-main-black;
+                        font-size: 18px;
+                        color: #20231e;
+                    }
+
+                    p {
+                        margin-bottom: 35px !important;
+
+                        &:last-child {
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
