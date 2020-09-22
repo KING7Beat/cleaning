@@ -381,16 +381,16 @@ h2 {
       position: relative; }
 .section-services {
   background: #f2f3f5;
-  padding: 256px 0 154px; }
+  padding: 450px 0 154px; }
   @media screen and (max-width: 1199px) {
     .section-services {
-      padding: 700px 0 154px; } }
+      padding: 900px 0 154px; } }
   @media screen and (max-width: 991px) {
     .section-services {
-      padding: 850px 0 154px; } }
+      padding: 1000px 0 154px; } }
   @media screen and (max-width: 640px) {
     .section-services {
-      padding: 900px 0 154px; } }
+      padding: 1050px 0 154px; } }
   .section-services h2 {
     margin-bottom: 101px; }
   .section-services .button {
