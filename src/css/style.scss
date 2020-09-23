@@ -984,20 +984,25 @@ h2 {
             }
 
             &__title {
-                padding: 35px 40px 35px 134px;
+                // padding: 35px 40px 35px 134px;
+                padding: 35px 40px 35px 49px;
+                margin-left: 85px;
                 color: #20231e;
                 font-family: $font-main-black;
                 border: 3px solid #f2f3f5;
                 position: relative;
 
+                @media screen and (max-width: 991px) {
+                    padding: 35px 40px 35px 15px;
+                }
+
                 @media screen and (max-width: 767px) {
-                    padding: 35px 10px 35px 100px;
-                    // font-size: 14px;
+                    padding: 35px 10px 35px 10px;
                 }
 
                 @media screen and (max-width: 560px) {
                     padding: 35px 20px;
-                    // font-size: 14px;
+                    margin-left: 0;
                 }
 
                 @media screen and (max-width: 490px) {
@@ -1015,10 +1020,11 @@ h2 {
                     color: #20231e;
                     font-family: $font-main-reg;
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: -3px;
+                    // left: 0;
+                    left: -88px;
                     width: 85px;
-                    height: 100%;
+                    height: calc(100% + 6px);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -1039,6 +1045,10 @@ h2 {
                     transition: all ease .7s;
                     background: url('../img/arrow-accord.png') center no-repeat;
                     transform: rotate(180deg);
+
+                    @media screen and (max-width: 991px) {
+                        right: 25px;
+                    }
 
                     @media screen and (max-width: 767px) {
                         bottom: 0;

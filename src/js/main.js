@@ -38,12 +38,16 @@ $('.form-block_amount-btn').click(function() {
     {
         $('.form-block_amount-text').text(num+=1);
     }
-})
+});
 
 
 $('#dropdown-phone').on('shown.bs.dropdown', function () {
     $('#dropdown-phone .dropdown-item').click(function () {
         $('#dropdown-phone .dropdown-toggle').text($(this).text());
         $('.section-header-phone a').attr('href', `+38${$(this).text().match(/\d+/g).join('')}`);
-    })
+    });
+});
+
+$('#dropdown-header-form .dropdown-item').click(function (e) {
+    $(this).parent().addClass('show');
 })
