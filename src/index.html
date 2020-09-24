@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Test 2</title>
+    <title>Project 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <p class="mb-0 section-header-phone">
-                        <a href="tel:+380994458466">Заказать звонок</a>
+                        <span data-toggle="modal" data-target="#modal-2">Заказать звонок</span>
                     </p>
                 </div>
             </nav>
@@ -47,13 +47,13 @@
                     Киевской области. <span class="span__tagline">Доверьте уборку профессионалам своего дела!</span></p>
                 <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
                     <button class="button">Заказать уборку</button>
-                    <p class="section-header__info-price mt-5 mt-md-0">Посмотреть стоимость услуг</p>
+                    <p class="section-header__info-price mt-5 mt-md-0" data-toggle="modal" data-target="#modal-1">Посмотреть стоимость услуг</p>
                 </div>
             </div>
         </div>
         <div class="section-header__form form__wrap">
             <div class="section-header__form-title text-center">
-                <h5>Заполните форму</h5>
+                <h5>Заказать уборку</h5>
                 <p class="mb-0">Чтобы мы могли рассчитать ориентировочную стоимость уборки Вашего помещения!</p>
             </div>
             <div class="section-header__form-body">
@@ -67,7 +67,7 @@
                                         <div class="col-2">
                                             <img src="./img/icon-type.png" alt="">
                                         </div>
-                                        <div class="col-10">
+                                        <div class="col-10 form__block-validate-wrap">
                                             Выберите вид уборки
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
                                     <div class="col-2 px-0 px-xl-3">
                                         <img src="./img/icon-user.png" alt="">
                                     </div>
-                                    <div class="col-10">
+                                    <div class="col-10 form__block-validate-wrap">
                                         <input type="text" name="" id="" placeholder="Ваше имя"
                                             class="w-100 h-100 border-0">
                                     </div>
@@ -111,7 +111,7 @@
                                     <div class="col-2 px-0 px-xl-3">
                                         <img src="./img/icon-phone.png" alt="">
                                     </div>
-                                    <div class="col-10">
+                                    <div class="col-10 form__block-validate-wrap">
                                         <input type="text" name="" id="" placeholder="+ 38 хх ххх хх хх"
                                             class="w-100 h-100 border-0">
                                     </div>
@@ -132,36 +132,36 @@
                                     </div>
                                     <div class="dropdown-menu w-100" x-placement='bottom-start' aria-labelledby="dropdownMenuButton3">
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Услуга «Доставка ключей»</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-1">
+                                            <label class="w-100" for="checkbox-dop-1">Услуга «Доставка ключей»</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Балкон (маленький)</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-2">
+                                            <label class="w-100" for="checkbox-dop-2">Балкон (маленький)</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Лоджия</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-3">
+                                            <label class="w-100" for="checkbox-dop-3">Лоджия</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Глажка</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-4">
+                                            <label class="w-100" for="checkbox-dop-4">Глажка</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Мытье посуды</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-5">
+                                            <label class="w-100" for="checkbox-dop-5">Мытье посуды</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Мойка вытяжки внутри</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-6">
+                                            <label class="w-100" for="checkbox-dop-6">Мойка вытяжки внутри</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Мойка холодильника внутри</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-7">
+                                            <label class="w-100" for="checkbox-dop-7">Мойка холодильника внутри</label>
                                         </p>
                                         <p class="dropdown-item">
-                                            <input type="checkbox" name="">
-                                            <span>Мойка СВЧ-печи</span>
+                                            <input type="checkbox" name="" id="checkbox-dop-8">
+                                            <label class="w-100" for="checkbox-dop-8">Мойка СВЧ-печи</label>
                                         </p>
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                                     <div class="col-2 px-0 px-xl-3">
                                         <img src="./img/icon-date.png" alt="">
                                     </div>
-                                    <div class="col-10">
+                                    <div class="col-10 form__block-validate-wrap">
                                         <span class="date-picker-text">Выберите дату для уборки</span>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                             <input type="checkbox" name="" id="agree-rulles">
                             <label for="agree-rulles">я согласен(на) с обработкой моих персональных данных и условиями договора на уборку.</label>
                         </p>
-                        <button class="button d-block mx-auto mx-xl-0">Заказать уборку</button>
+                        <button class="button d-block mx-auto w-xl-100 mx-xl-0">Заказать уборку</button>
                     </div>
                 </div>
             </div>
@@ -281,7 +281,7 @@
                             <button class="button px-0">Заказать уборку</button>
                         </div>
                     </div>
-                    <div class="section-services-card">
+                    <div class="section-services-card active__card">
                         <div class="section-services-card__img text-center">
                             <img src="./img/card-6.png" alt="">
                         </div>
@@ -349,7 +349,7 @@
                         <div class="col-3 col-sm-2 px-0">
                             <img src="./img/icon-user.png" alt="">
                         </div>
-                        <div class="col-9 col-sm-10 px-0">
+                        <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                             <input type="text" class="w-100 border-0" name="" id="" placeholder="Введите Ваше имя">
                         </div>
                     </div>
@@ -357,7 +357,7 @@
                         <div class="col-3 col-sm-2 px-0">
                             <img src="./img/icon-phone.png" alt="">
                         </div>
-                        <div class="col-9 col-sm-10 px-0">
+                        <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                             <input type="text" class="w-100 border-0" name="" id="" placeholder="+38 xxx xxx xx xx">
                         </div>
                     </div>
@@ -365,7 +365,7 @@
                         <div class="col-3 col-sm-2 px-0">
                             <img src="./img/icon-date.png" alt="">
                         </div>
-                        <div class="col-9 col-sm-10 px-0">
+                        <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                             <span class="date-picker-text">Выберите дату для уборки</span>
                         </div>
                     </div>
@@ -373,7 +373,7 @@
                         <div class="col-3 col-sm-2 px-0">
                             <img src="./img/icon-phone.png" alt="">
                         </div>
-                        <div class="col-9 col-sm-10 px-0">
+                        <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                             <input type="text" class="w-100 border-0" name="" id="" placeholder="Ваш комментарий">
                         </div>
                     </div>
@@ -504,7 +504,7 @@
                             <div class="col-3 col-sm-2">
                                 <img src="./img/icon-user.png" alt="">
                             </div>
-                            <div class="col-9 col-sm-10 px-0">
+                            <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                                 <input type="text" name="" id="" class="w-100 border-0" placeholder="Введите Ваше имя">
                             </div>
                         </div>
@@ -512,15 +512,16 @@
                             <div class="col-3 col-sm-2">
                                 <img src="./img/icon-phone.png" alt="">
                             </div>
-                            <div class="col-9 col-sm-10 px-0">
+                            <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                                 <input type="text" name="" id="" class="w-100 border-0" placeholder="+38 xxx xxx xx xx">
+                                <div class="form__block-validate">Обязательное поле</div>
                             </div>
                         </div>
                         <div class="row form__block">
                             <div class="col-3 col-sm-2">
                                 <img src="./img/icon-comment.png" alt="">
                             </div>
-                            <div class="col-9 col-sm-10 px-0">
+                            <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
                                 <input type="text" name="" id="" class="w-100 border-0" placeholder="Ваш комментарий">
                             </div>
                         </div>
@@ -584,6 +585,176 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-test-btns d-flex flex-column" style="position: fixed; top: 10px; left: 20px; z-index: 9999;">
+        <button data-toggle="modal" data-target="#modal-3">modal 3</button>
+    </div>
+
+    <div class="modals">
+        <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="modal-1Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal__header">
+                        <h6>Прайс лист наших услуг</h6>
+                        <div class="button__close">X</div>
+                    </div>
+                    <div class="modal__body">
+                        <div class="row">
+                            <ul class="col-12 col-xl-6">
+                                <li class="d-flex flex-row">
+                                    <span>Повседневная уборка</span> <span>от 26грн/м2</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Генеральная уборка</span> <span>от 39грн/м2</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Уборка после ремонта </span> <span>от 49грн/м2</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Экоуборка</span> <span>от 30грн/м2</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Дополнительный санузел</span> <span>220грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Услуга «Доставка ключей»</span> <span>100грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Балкон (маленький) </span> <span>120грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Лоджия</span> <span>150грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Глажка </span> <span>160грн/час</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мытье посуды </span> <span>160грн/час</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка вытяжки внутри</span> <span>160грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка холодильника внутри</span> <span>110грн/30мин</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка СВЧ-печи (микроволновки)</span> <span>110грн/30 мин</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка духовки </span> <span>160грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка кухонных шкафчиков </span> <span>160грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка шкафов </span> <span>160грн</span>
+                                </li>
+                            </ul>
+                            <ul class="col-12 col-xl-6">
+                                <li class="d-flex flex-row">
+                                    <span>Мойка окон</span> <span>100грн/м2</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Мойка окон после ремонта</span> <span>150грн/м2</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка стул с мягким сидением</span> <span>75грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка стул с мягким сидением и спинкой</span> <span>130грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка стул мягкий ученический/рабочий</span> <span>135грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка пуфик</span> <span>100грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка кресло стандартное</span> <span>250грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка кресло большое/раскладное</span> <span>350грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка дивана двухместный</span> <span>500грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка дивана трехместный</span> <span>1000-1100грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка дивана трехместный угловой</span> <span>1500грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>+ раскладная часть</span> <span>200грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка матраса односпальный</span> <span>300грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка матраса стандартный</span> <span>600грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка матраса King Size</span> <span>750грн</span>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <span>Химчистка ковров</span> <span>80грн/м2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="modal-2Title"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal__header">
+                        <h6 class="text-uppercase text-center">ЗАПОЛНИТЕ ФОРМУ!</h6>
+                        <p class="mb-0 text-center">Заполните поля ниже и мы свяжемся с Вами в ближайшее время!</p>
+                        <div class="button__close">X</div>
+                    </div>
+                    <div class="modal__body">
+                        <div class="row form__block ">
+                            <div class="col-3 col-sm-2 px-0">
+                                <img src="./img/icon-user.png" alt="">
+                            </div>
+                            <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
+                                <input type="text" class="w-100 border-0" name="" id="" placeholder="Введите Ваше имя">
+                            </div>
+                        </div>
+                        <div class="row mt-4 form__block ">
+                            <div class="col-3 col-sm-2 px-0">
+                                <img src="./img/icon-phone.png" alt="">
+                            </div>
+                            <div class="col-9 form__block-validate-wrap col-sm-10 px-0">
+                                <input type="text" class="w-100 border-0" name="" id="" placeholder="+38 xxx xxx xx xx">
+                            </div>
+                        </div>
+                        <button class="button w-100">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="modal-3Title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal__header">
+                    <div class="button__close">X</div>
+                </div>
+                <div class="modal__body">
+                    <h6 class="text-center text-uppercase">Спасибо!</h6>
+                    <p class="mb-0 text-center">Сообщения успешно отправлено, мы Вам перезвоним в самое ближайшее время!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

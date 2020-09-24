@@ -44,10 +44,13 @@ $('.form-block_amount-btn').click(function() {
 $('#dropdown-phone').on('shown.bs.dropdown', function () {
     $('#dropdown-phone .dropdown-item').click(function () {
         $('#dropdown-phone .dropdown-toggle').text($(this).text());
-        $('.section-header-phone a').attr('href', `+38${$(this).text().match(/\d+/g).join('')}`);
     });
 });
 
 $('#dropdown-header-form .dropdown-item').click(function (e) {
-    $(this).parent().addClass('show');
-})
+    e.stopPropagation();
+});
+
+$('.button__close').click(function () {
+    $('.modal').modal('hide');
+});
